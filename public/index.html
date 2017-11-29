@@ -1,24 +1,72 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-<head>
-<meta charset="UTF-8">
-<meta name="viewpoint" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
-<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
-<title>Node.js靜態網頁</title>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>撲克牌發牌</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- 引入我們自己寫的 CSS -->
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
-
 <body>
-<h1>歡迎來到我的網站</h1>
-<p>這是node.js的靜態網頁</p>
-<p>多加一串字</p>
-  <p>test</p>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>撲克牌發牌</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button id="deal" type="button" class="btn btn-primary">發牌</button>
+            </div>
+        </div>
+
+
+
+        <div class="row" id="data">
+            <div class="col-2 text-center">
+                <img src="./poker/back.png">
+            </div>
+            <div class="col-2 text-center">
+                <img src="./poker/back.png">
+            </div>
+            <div class="col-2 text-center">
+                <img src="./poker/back.png">
+            </div>
+            <div class="col-2 text-center">
+                <img src="./poker/back.png">
+            </div>
+            <div class="col-2 text-center">
+                <img src="./poker/back.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <button id="test" type="button" class="btn btn-primary">判斷牌型</button>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col">
+                <label for="example-number-input" class="col-form-label">牌型結果</label>
+                <input class="form-control" type="text" id="result">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- 引入我們自己寫的 JavaScript -->
+    <script src="./js/index.js"></script>
 </body>
-
-
-
-
-
 
 </html>
